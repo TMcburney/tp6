@@ -1,50 +1,61 @@
-* {
+*{
   box-sizing: border-box;
 }
-
 /* "Mrs. Sigg's Snickerdoodles" */
 
-h1 {
-  font-family: "Lucida Handwriting";
+#title, h1 {
+  font-family: "Lucida Handwriting"; 
   background-color: #a78254;
   color: #ffe4be;
+  width: 100vw;
+  font-size: 36px;
+  text-align: center; 
+ }
+
+#title h1.tp6{
+  color: #644e32;
+}
+
+ul, ol {
+  display: none;
+}
+
+ul.showMe,
+ol.showMe {
+  display: block
 }
 
 /*In order= Ingredients, Equipment, and Directions */
 
 h2 {
-  margin-bottom: 0;
-  font-family: "Lucida Handwriting";
+  margin-bottom: 0; 
+  font-family: "Lucida Handwriting"; 
   background-color: #a78254;
   color: #ffe4be;
-}
-
+ }
 h3 {
-  margin-bottom: 0;
-  font-family: "Lucida Handwriting";
+  margin-bottom: 0; 
+  font-family: "Lucida Handwriting"; 
   background-color: #a78254;
   color: #ffe4be;
-}
-
+  
+ }
 h4 {
-  margin-bottom: 0;
-  font-family: "Lucida Handwriting";
+  margin-bottom: 0; 
+  font-family: "Lucida Handwriting"; 
   background-color: #a78254;
   color: #ffe4be;
-}
+ }
 
-/* These are all my listed items */
+/* These are all my listed items */ 
 
-ul,
-ol,
-li {
+ul, ol, li {
   margin-top: 0;
-  font-family: "Lucida Handwriting";
+  font-family: "Lucida Handwriting"; 
   color: #a78254;
   font-size: 19px;
   background-color: #ffe4be;
 }
-
 /*photo and recipe credits */
 
 .copyright {
@@ -54,7 +65,7 @@ li {
   float: left;
   color: #a78254;
   background-color: #ffe4be;
-}
+} 
 
 /*
 Responsive Design 'mobile first'
@@ -72,12 +83,10 @@ div {
   display: inline-block;
   width: 100vw;
   padding: 1vw;
+  background: inline;
+  background-color: #a78254;
+  
 }
-
-div#h1 {
-  width: 100vw;
-}
-
 /*
 @media (orientation: landscape) {
   div{
@@ -85,10 +94,9 @@ div#h1 {
     float: left;
   }
 }*/
-
 /* Background image */
 
-body {
+body{
   background-image: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1751192.jpg&w=596&h=596&c=sc&poi=face&q=85");
   background-size: cover;
   background-attachment: fixed;
@@ -100,19 +108,16 @@ body {
     float: left;
   }
 }
-
 @media (orientation: portrait) {
   div {
-    width: calc(100vw);
+    width: 100vw;
   }
 }
-
 @media only screen and (max-width: 575px) {
   body {
-    background-color: lightblue;
+    background-color: #ffe4be;
   }
 }
-
 img {
   width: 100%;
   height: 500px;
